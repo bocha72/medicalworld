@@ -12,7 +12,7 @@ mainpitch:
 main:
   image1:
     alt: Soporte de vida
-    image: /img/30_2x-300x300-removebg-preview.png
+    image: /img/soporte-de-vida-icon.png
   categoryname1: Soporte de vida
   image2:
     alt: Cardiologia intervencionista
