@@ -1,11 +1,12 @@
 ---
-templateKey: 'blog-post'
-title: 'Just in: small batch of Jamaican Blue Mountain in store next week'
+templateKey: blog-post
+title: SOLACI-SOCIME 2018
 date: 2017-01-04T15:04:10.000Z
+description: |-
+  http://www.solacicongress.org/es/
+  Lugar: MEXICO Fecha: 01/08/2018
 featuredpost: true
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
+featuredimage: /img/xxxii.jpg
 tags:
   - jamaica
   - green beans
