@@ -44,17 +44,17 @@ collections:
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]},
-              {label: Category Name 1, name: categoryname1, widget: string} 
+              {label: Category Name 1, name: categoryname1, widget: string},
               {label: Image2, name: image2, widget: object, fields: [
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}, 
-              {label: Category Name 2, name: categoryname2, widget: string} 
+              {label: Category Name 2, name: categoryname2, widget: string}, 
               {label: Image3, name: image3, widget: object, fields: [
                 {label: Image, name: image, widget: image}, 
                 {label: Alt, name: alt, widget: string}
               ]}
-              {label: Category Name 3, name: categoryname3, widget: string} 
+              {label: Category Name 3, name: categoryname3, widget: string},
             ]}
       - file: "src/pages/about/index.md"
         label: "About"
