@@ -1,0 +1,34 @@
+.footer {
+    border-top: 2px solid #376295;
+    display: flex;
+    padding: 2rem 3rem !important;
+    .footer-logo {
+        width: 20%;
+        display: flex;
+        padding: 15px;
+        margin-bottom: unset;
+        img {
+            width: 100% !important;
+            height: auto !important;
+            display: block;
+            margin: auto;
+        }
+    }
+    .footer-content {
+        width: 80%;
+        padding: 15px;
+        .container {
+            .columns {
+                .column {
+                    section {
+                        .menu-list {
+                            .navbar-item {
+                                color: #000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

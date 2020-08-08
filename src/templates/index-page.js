@@ -1,23 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
 import Layout from '../components/Layout'
-import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 export const IndexPageTemplate = ({
   image,
   title,
-  heading,
-  subheading,
+  subtitle,
   mainpitch,
-  description,
-  intro,
+  main
 }) => (
-  <div>
+  <div className="home">
     <div
-      className="full-width-image margin-top-0"
+      className="banner full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
@@ -39,29 +36,25 @@ export const IndexPageTemplate = ({
         <h1
           className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
+            color: '#fff',
             lineHeight: '1',
             padding: '0.25em',
+            textAlign: 'center'
           }}
         >
           {title}
         </h1>
-        <h3
+        <h2
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
+            color: '#fff',
             lineHeight: '1',
             padding: '0.25em',
+            textAlign: 'center'
           }}
         >
-          {subheading}
-        </h3>
+          {subtitle}
+        </h2>
       </div>
     </div>
     <section className="section section--gradient">
@@ -70,36 +63,38 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
+                <div className="content subtitle-content">
                   <div className="tile">
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
+                <div className="columns home-categories">
+                  <div className="column is-4 has-text-centered">
+                  <PreviewCompatibleImage imageInfo={main.image1} />
+                    <h4>{main.categoryname1}</h4>
+                  </div>
+                  <div className="column is-4 has-text-centered">
+                  <PreviewCompatibleImage imageInfo={main.image2} />
+                    <h4>{main.categoryname2}</h4>
+                  </div>
+                  <div className="column is-4 has-text-centered">
+                  <PreviewCompatibleImage imageInfo={main.image3} />
+                    <h4>{main.categoryname3}</h4>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
+                <div className="columns category-button">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
                       See all products
                     </Link>
                   </div>
                 </div>
-                <div className="column is-12">
+                <div className="home-blog column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
                   <BlogRoll />
-                  <div className="column is-12 has-text-centered">
+                  <div className="column is-12 has-text-centered blog-button">
                     <Link className="btn" to="/blog">
                       Read more
                     </Link>
@@ -117,12 +112,15 @@ export const IndexPageTemplate = ({
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  subheading: PropTypes.string,
+  subtitle: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
+  main: PropTypes.shape({
+    categoryname1: PropTypes.string,
+    categoryname2: PropTypes.string,
+    categoryname3: PropTypes.string,
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
 }
 
@@ -134,11 +132,9 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
-        heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
+        subtitle={frontmatter.subtitle}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
+        main={frontmatter.main}
       />
     </Layout>
   )
@@ -166,26 +162,44 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
-        subheading
+        subtitle
         mainpitch {
-          title
           description
         }
-        description
-        intro {
-          blurbs {
+        main {
+          image1 {
+            alt
             image {
               childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
+                fluid(maxWidth: 135, quality: 92) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
-            text
           }
-          heading
-          description
+          categoryname1
+          image2 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 135, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          categoryname2
+          image3 {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 135, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          categoryname3
         }
       }
     }
