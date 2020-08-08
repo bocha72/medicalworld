@@ -1,19 +1,23 @@
 ---
-templateKey: 'about-page'
+templateKey: about-page
 path: /about
-title: About our values
+title: La Empresa
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+> **Somos una empresa dedicada a la importación y comercialización de dispositivos de uso médico, especializada en las áreas de Cirugía Cardiovascular, Cardiología Intervencionista y Asistencia Ventricular Mecánica.**
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+Contamos con una oficina comercial y dos depósitos habilitados por la Autoridad Sanitaria estrategicamente ubicados en la Ciudad de Buenos Aires.
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+Nuestra fuerza de ventas está compuesta por vendedores, especialistas de producto y profesionales del área de la salud altamente capacitados para asistir a nuestros clientes, tanto a nivel científico como en el área técnica, brindando asesoramiento y soporte en quirófano y en las unidades de cuidados intensivos.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Debido a la amplitud geográfica de nuestro país, trabajamos con subdistribuidores que realizan tareas de promoción y ventas en las principales ciudades del interior del país.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+Dedicamos un gran esfuerzo a colaborar en la capacitación de nuestros clientes promocionando su participación en cursos y congresos internacionales de especialización.
+
+![mapa](/img/mapa.jpg)
+
+### Expansión
+
+
+Esta estructura y dedicación nos han permitido
+ampliar nuestro mercado a otros países de Sud América,
+tales como Chile, Uruguay y Paraguay.
