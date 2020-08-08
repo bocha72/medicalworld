@@ -1,10 +1,12 @@
 ---
 templateKey: blog-post
-title: Making sense of the SCAA’s new Flavor Wheel
+title: Simposio Fundación Favaloro 2018
 date: 2016-12-17T15:04:10.000Z
+description: |-
+  ffavaloro.virtualmedica.com
+  Lugar: Hilton Hotel - Buenos Aires Fecha: 17/08/2018
 featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
+featuredimage: /img/maxresdefault.jpg
 tags:
   - flavor
   - tasting
