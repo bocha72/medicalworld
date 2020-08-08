@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: La Empresa
 ---
-> **Somos una empresa dedicada a la importación y comercialización de dispositivos de uso médico, especializada en las áreas de Cirugía Cardiovascular, Cardiología Intervencionista y Asistencia Ventricular Mecánica.**
+**Somos una empresa dedicada a la importación y comercialización de dispositivos de uso médico, especializada en las áreas de Cirugía Cardiovascular, Cardiología Intervencionista y Asistencia Ventricular Mecánica.**
 
 Contamos con una oficina comercial y dos depósitos habilitados por la Autoridad Sanitaria estrategicamente ubicados en la Ciudad de Buenos Aires.
 
@@ -16,7 +16,6 @@ Dedicamos un gran esfuerzo a colaborar en la capacitación de nuestros clientes 
 ![mapa](/img/mapa.jpg)
 
 ### Expansión
-
 
 Esta estructura y dedicación nos han permitido
 ampliar nuestro mercado a otros países de Sud América,
