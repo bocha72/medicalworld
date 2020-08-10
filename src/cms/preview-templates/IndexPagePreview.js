@@ -5,31 +5,35 @@ import { IndexPageTemplate } from '../../templates/index-page'
 const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(['data']).toJS()
 
-  return (
-    <IndexPageTemplate
-      image={getAsset(entry.getIn(['data', 'image']))}
-      title={entry.getIn(['data', 'title'])}
-      subtitle={entry.getIn(['data', 'subtitle'])}
-      mainpitch={entry.getIn(['data', 'mainpitch', 'description'])}
-      main={{
-        image1: {
-          image: getAsset(entry.getIn(['data', 'main', 'image1', 'image'])),
-          alt: entry.getIn(['data', 'main', 'image1', 'alt']),
-          title: entry.getIn(['data', 'main', 'image1', 'title']),
-        },
-        image2: {
-          image: getAsset(entry.getIn(['data', 'main', 'image2', 'image'])),
-          alt: entry.getIn(['data', 'main', 'image2', 'alt']),
-          title: entry.getIn(['data', 'main', 'image2', 'title']),
-        },
-        image3: {
-          image: getAsset(entry.getIn(['data', 'main', 'image3', 'image'])),
-          alt: entry.getIn(['data', 'main', 'image3', 'alt']),
-          title: entry.getIn(['data', 'main', 'image3', 'title']),
-        },
-      }}
-    />
-  )
+  if (data) {
+    return (
+      <IndexPageTemplate
+        image={getAsset(data.image)}
+        title={data.title}
+        subtitle={data.subtitle}
+        mainpitch={data.mainpitch || {}}
+        main={{
+          image1: {
+            image: getAsset(entry.getIn(['data', 'main', 'image1', 'image'])),
+            alt: entry.getIn(['data', 'main', 'image1', 'alt']),
+            title: entry.getIn(['data', 'main', 'image1', 'title']),
+          },
+          image2: {
+            image: getAsset(entry.getIn(['data', 'main', 'image2', 'image'])),
+            alt: entry.getIn(['data', 'main', 'image2', 'alt']),
+            title: entry.getIn(['data', 'main', 'image2', 'title']),
+          },
+          image3: {
+            image: getAsset(entry.getIn(['data', 'main', 'image3', 'image'])),
+            alt: entry.getIn(['data', 'main', 'image3', 'alt']),
+            title: entry.getIn(['data', 'main', 'image3', 'title']),
+          },
+        }}
+      />
+    )
+  } else {
+    return <div>Loading...</div>
+  }
 }
 
 IndexPagePreview.propTypes = {
