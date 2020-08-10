@@ -10,11 +10,25 @@ const IndexPagePreview = ({ entry, getAsset }) => {
       <IndexPageTemplate
         image={getAsset(data.image)}
         title={data.title}
-        heading={data.heading}
-        subheading={data.subheading}
-        description={data.description}
-        intro={data.intro || { blurbs: [] }}
+        subtitle={data.subtitle}
         mainpitch={data.mainpitch || {}}
+        main={{
+          image1: {
+            image: getAsset(entry.getIn(['data', 'main', 'image1', 'image'])),
+            alt: entry.getIn(['data', 'main', 'image1', 'alt']),
+            title: entry.getIn(['data', 'main', 'title']),
+          },
+          image2: {
+            image: getAsset(entry.getIn(['data', 'main', 'image2', 'image'])),
+            alt: entry.getIn(['data', 'main', 'image2', 'alt']),
+            title: entry.getIn(['data', 'main', 'title']),
+          },
+          image3: {
+            image: getAsset(entry.getIn(['data', 'main', 'image3', 'image'])),
+            alt: entry.getIn(['data', 'main', 'image3', 'alt']),
+            title: entry.getIn(['data', 'main', 'title']),
+          },
+        }}
       />
     )
   } else {

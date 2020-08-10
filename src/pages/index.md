@@ -13,13 +13,13 @@ main:
   image1:
     alt: Soporte de vida
     image: /img/soporte-de-vida-icon.png
-  categoryname1: Soporte de vida
+    title: Soporte de vida
   image2:
     alt: Cardiologia intervencionista
     image: /img/cardiologia-intervencionista-icon.png
-  categoryname2: Cardiologia intervencionista
+    title: Cardiologia intervencionista
   image3:
     alt: Cirugia cardiaca
     image: /img/cirugia-cardiaca-icon.png
-  categoryname3: Cirugia cardiaca
+    title: Cirugia cardiaca
 ---

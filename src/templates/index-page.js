@@ -70,16 +70,16 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="columns home-categories">
                   <div className="column is-4 has-text-centered">
-                  <PreviewCompatibleImage imageInfo={main.image1} />
-                    <h4>{main.categoryname1}</h4>
+                    <PreviewCompatibleImage imageInfo={main.image1} />
+                    <h4>{main.image1.title}</h4>
                   </div>
                   <div className="column is-4 has-text-centered">
-                  <PreviewCompatibleImage imageInfo={main.image2} />
-                    <h4>{main.categoryname2}</h4>
+                    <PreviewCompatibleImage imageInfo={main.image2} />
+                    <h4>{main.image2.title}</h4>
                   </div>
                   <div className="column is-4 has-text-centered">
-                  <PreviewCompatibleImage imageInfo={main.image3} />
-                    <h4>{main.categoryname3}</h4>
+                    <PreviewCompatibleImage imageInfo={main.image3} />
+                    <h4>{main.image3.title}</h4>
                   </div>
                 </div>
                 <div className="columns category-button">
@@ -115,12 +115,9 @@ IndexPageTemplate.propTypes = {
   subtitle: PropTypes.string,
   mainpitch: PropTypes.object,
   main: PropTypes.shape({
-    categoryname1: PropTypes.string,
-    categoryname2: PropTypes.string,
-    categoryname3: PropTypes.string,
-    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.string]),
+    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.string]),
+    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.string]),
   }),
 }
 
@@ -176,8 +173,8 @@ export const pageQuery = graphql`
                 }
               }
             }
+            title
           }
-          categoryname1
           image2 {
             alt
             image {
@@ -187,8 +184,8 @@ export const pageQuery = graphql`
                 }
               }
             }
+            title
           }
-          categoryname2
           image3 {
             alt
             image {
@@ -198,8 +195,8 @@ export const pageQuery = graphql`
                 }
               }
             }
+            title
           }
-          categoryname3
         }
       }
     }
