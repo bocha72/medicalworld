@@ -12,14 +12,14 @@ mainpitch:
 main:
   image1:
     alt: Soporte de vida
-    image: /img/soporte-de-vida-icon.png
+    image: /img/30_2x-300x300-removebg-preview.png
     title: Soporte de vida
   image2:
     alt: Cardiologia intervencionista
-    image: /img/cardiologia-intervencionista-icon.png
+    image: /img/30_2x-300x300-removebg-preview.png
     title: Cardiologia intervencionista
   image3:
     alt: Cirugia cardiaca
-    image: /img/cirugia-cardiaca-icon.png
+    image: /img/30_2x-300x300-removebg-preview.png
     title: Cirugia cardiaca
 ---
