@@ -32,28 +32,28 @@ export const ProductPageTemplate = ({
       <div className="column is-4 has-text-centered">
         <PreviewCompatibleImage imageInfo={main.image1} />
         <h4>{main.image1.title}</h4>
-        <ul>
-          <li>
+        <ul className="product-links">
+          <li className="item">
             <Link className="btn" to="#">
               Producto 1
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 2
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 3
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 4
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 5
             </Link>
@@ -63,28 +63,28 @@ export const ProductPageTemplate = ({
       <div className="column is-4 has-text-centered">
         <PreviewCompatibleImage imageInfo={main.image2} />
         <h4>{main.image2.title}</h4>
-        <ul>
-          <li>
+        <ul className="product-links">
+          <li className="item">
             <Link className="btn" to="#">
               Producto 1
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 2
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 3
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 4
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 5
             </Link>
@@ -94,28 +94,28 @@ export const ProductPageTemplate = ({
       <div className="column is-4 has-text-centered">
         <PreviewCompatibleImage imageInfo={main.image3} />
         <h4>{main.image3.title}</h4>
-        <ul>
-          <li>
+        <ul className="product-links">
+          <li className="item">
             <Link className="btn" to="#">
               Producto 1
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 2
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 3
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 4
             </Link>
           </li>
-          <li>
+          <li className="item">
             <Link className="btn" to="#">
               Producto 5
             </Link>

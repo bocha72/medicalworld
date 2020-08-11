@@ -1,0 +1,23 @@
+.product-page {
+    .product-categories {
+        padding: 0 5%;
+        .is-4 {
+            .product-links {
+                margin-left: unset;
+                margin-top: unset;
+                .item {
+                    list-style: none;
+                    margin-bottom: 20px;
+                    .btn {
+                        box-shadow: inset 0 0 0 2px #376295;
+                        color: #376295;
+                        &:hover {
+                            box-shadow: inset 0 0 0 2px #b73086;
+                            color: #b73086;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
