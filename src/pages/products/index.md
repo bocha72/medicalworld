@@ -1,8 +1,8 @@
 ---
-templateKey: 'product-page'
+templateKey: product-page
 path: /products
-title: Our Coffee
-image: /img/jumbotron.jpg
+title: Pagina de Productos
+image: /img/fondo-publicaciones.jpg
 main:
   image1:
     alt: Soporte de vida
