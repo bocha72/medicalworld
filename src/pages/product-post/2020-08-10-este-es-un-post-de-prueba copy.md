@@ -1,6 +1,6 @@
 ---
 templateKey: product-post
-title: Producto 1
+title: Producto 2
 date: 2020-08-10T13:56:47.335Z
 description: El siguiente post fue creado desde el cms backend
 featuredpost: true
