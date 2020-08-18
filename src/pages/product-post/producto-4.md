@@ -8,5 +8,11 @@ brochure:
   brochure1:
     title: Magento
     url: http://www.magento.com
+  brochure2:
+    title: " "
+    url: " "
+  brochure3:
+    title: " "
+    url: " "
 ---
 ![magento logo](/img/m2logo.png "magento logo")
