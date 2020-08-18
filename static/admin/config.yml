@@ -27,7 +27,7 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
 
-  - name: "products"
+  - name: "productspost"
     label: "Products"
     folder: "src/pages/product-post"
     create: true
