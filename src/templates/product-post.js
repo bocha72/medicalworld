@@ -27,17 +27,17 @@ export const ProductPostTemplate = ({
             <p>{description}</p>
             <ul className="brochure-list">
             <li className="brochure-item">
-                <a className="btn" href={brochure.brochure1.url}>
+                <a href={brochure.brochure1.url}>
                   {brochure.brochure1.title}
                 </a>
               </li>
               <li className="brochure-item">
-                <a className="btn" href={brochure.brochure2.url}>
+                <a href={brochure.brochure2.url}>
                   {brochure.brochure2.title}
                 </a>
               </li>
               <li className="brochure-item">
-                <a className="btn" href={brochure.brochure3.url}>
+                <a href={brochure.brochure3.url}>
                   {brochure.brochure3.title}
                 </a>
               </li>

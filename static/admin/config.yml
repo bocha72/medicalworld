@@ -41,14 +41,14 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Brochure", name: "brochure", widget: object, fields: [
           {label: "Brochure 1", name: "brochure1", widget: object, fields: [
-            {label: "Title", name: "title", widget: "string", required: false}, 
-            {label: "URL", name: "url", widget: "string", required: false}]},
+            {label: "Title", name: "title", widget: "string", required: false, default: ''}, 
+            {label: "URL", name: "url", widget: "string", required: false, default: ''}]},
           {label: "Brochure 2", name: "brochure2", widget: object, fields: [
-            {label: "Title", name: "title", widget: "string", required: false}, 
-            {label: "URL", name: "url", widget: "string", required: false}]},
+            {label: "Title", name: "title", widget: "string", required: false, default: ''}, 
+            {label: "URL", name: "url", widget: "string", required: false, default: ''}]},
           {label: "Brochure 3", name: "brochure3", widget: object, fields: [
-            {label: "Title", name: "title", widget: "string", required: false}, 
-            {label: "URL", name: "url", widget: "string", required: false}]}
+            {label: "Title", name: "title", widget: "string", required: false, default: ''}, 
+            {label: "URL", name: "url", widget: "string", required: false, default: ''}]}
         ]}
 
             
