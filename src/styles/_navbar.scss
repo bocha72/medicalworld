@@ -1,9 +1,62 @@
 @media screen and (min-width: 1024px) {
     .navbar {
-        height: 88px;
-        min-height: 88px;
+        display: block;
         border-bottom: 2px solid #b73086;
+        .header-toolbar {
+            width: 100%;
+            background-color: #2748a8;
+            display: inline-block;
+            padding: 5px 50px;
+            .toolbar-left {
+                float: left;
+                .contact-info {
+                    span.item {
+                        margin: 0 10px;
+                        a {
+                            display: inline-flex;
+                            .contact-img {
+                                position: relative;
+                                top: 3px;
+                            }
+                            .label {
+                                color: #fff;
+                                font-weight: 500;
+                                font-size: 12px;
+                                position: relative;
+                                top: 3px;
+                                padding-left: 10px;
+                            }
+                        }
+                    }
+                    span.separator {
+                        color: #fff;
+                        margin: 0 10px;
+                        font-weight: 100;
+                    }
+                }
+            }
+            .toolbar-right {
+                float: right;
+                ul.social {
+                    display: inline-flex;
+                    padding: unset;
+                    color: #ffffff;
+                    font-size: 10px;
+                    li {
+                        font-size: 14px;
+                        a {
+                            background-color: transparent;
+                        }
+                    }
+                    span.separator {
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+            }
+        }
         .container {
+            width: 100%;
             .navbar-brand {
                 .navbar-item {
                     width: 180px;

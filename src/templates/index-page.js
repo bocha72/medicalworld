@@ -55,6 +55,7 @@ export const IndexPageTemplate = ({
         >
           {subtitle}
         </h2>
+        <Link className="btn" to="/products"> Ver productos</Link>
       </div>
     </div>
     <section className="section section--gradient">
