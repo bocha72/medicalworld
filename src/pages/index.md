@@ -1,14 +1,12 @@
 ---
 templateKey: index-page
-title: Dispositivos de uso medico
+title: Productos Médicos
 image: /img/fondo-publicaciones.jpg
-subtitle: en Argentina, Chile, Uruguay y Paraguay
+subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
 mainpitch:
+  title: Nuestros productos
   description: >
-    Somos una empresa dedicada a la importación y comercialización de
-    dispositivos de uso médico, especializada en las áreas de Cirugía
-    Cardiovascular, Cardiología Intervencionista y Asistencia Ventricular
-    Mecánica.
+    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
 main:
   image1:
     alt: Soporte de vida

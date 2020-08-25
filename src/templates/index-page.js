@@ -23,38 +23,28 @@ export const IndexPageTemplate = ({
         backgroundAttachment: `fixed`,
       }}
     >
-      <div
+      <div className="banner-content"
         style={{
-          display: 'flex',
-          height: '150px',
-          lineHeight: '1',
-          justifyContent: 'space-around',
-          alignItems: 'left',
-          flexDirection: 'column',
+
         }}
       >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
+        <h5
+          className=""
           style={{
-            color: '#fff',
             lineHeight: '1',
             padding: '0.25em',
-            textAlign: 'center'
           }}
         >
           {title}
-        </h1>
-        <h2
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+        </h5>
+        <h3
+          className=""
           style={{
-            color: '#fff',
-            lineHeight: '1',
             padding: '0.25em',
-            textAlign: 'center'
           }}
         >
           {subtitle}
-        </h2>
+        </h3>
         <Link className="btn" to="/products"> Ver productos</Link>
       </div>
     </div>
@@ -63,10 +53,11 @@ export const IndexPageTemplate = ({
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content subtitle-content">
+              <div className="contents">
+                <div className="mainpitch">
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <h1 className="m-title">{mainpitch.title}</h1>
+                    <h4 className="m-subtitle">{mainpitch.description}</h4>
                   </div>
                 </div>
                 <div className="columns home-categories">
@@ -95,7 +86,7 @@ export const IndexPageTemplate = ({
                     Ultimas noticias
                   </h3>
                   <BlogRoll />
-                  <div className="column is-12 has-text-centered blog-button">
+                  <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Leer más
                     </Link>
@@ -162,6 +153,7 @@ export const pageQuery = graphql`
         }
         subtitle
         mainpitch {
+          title
           description
         }
         main {
