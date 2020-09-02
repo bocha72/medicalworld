@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 class ProductRoll extends React.Component {
   render() {
@@ -8,22 +9,51 @@ class ProductRoll extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <ul>
-        <div className="columns is-multiline">
-          {posts &&
-            posts.map(({ node: post }) => (
-              <li key={post.id} style = {{
-                width: '100%',
-                listStyle: 'none',
-              }}
+      <div className="columns is-multiline">
+        {posts &&
+          posts.map(({ node: post }) => (
+            <div className="is-parent column is-3" key={post.id}>
+              <article
+                className={`product-list-item tile is-child box notification ${
+                  post.frontmatter.featuredpost ? 'is-featured' : ''
+                }`}
               >
-                <Link to={post.fields.slug}>
-                  {post.frontmatter.title}
-                </Link>
-              </li>  
-            ))}
-        </div>
-      </ul>
+                <header>
+                  {post.frontmatter.featuredimage ? (
+                    <div className="featured-thumbnail">
+                      <PreviewCompatibleImage
+                        imageInfo={{
+                          image: post.frontmatter.featuredimage,
+                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
+                        }}
+                      />
+                    </div>
+                  ) : null}
+                  <p className="post-meta">
+                    <Link
+                      className="title has-text-primary is-size-4"
+                      to={post.fields.slug}
+                    >
+                      {post.frontmatter.title}
+                    </Link>
+                    <span> &bull; </span>
+                    <span className="subtitle is-size-5 is-block">
+                      {post.frontmatter.date}
+                    </span>
+                  </p>
+                </header>
+                <p>
+                  {post.excerpt}
+                  <br />
+                  <br />
+                  <Link className="btn" to={post.fields.slug}>
+                    Ver Producto
+                  </Link>
+                </p>
+              </article>
+            </div>
+          ))}
+      </div>
     )
   }
 }
@@ -39,27 +69,36 @@ ProductRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query ProductRollQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "product-post" } } }
-        ) {
-          edges {
-            node {
-              excerpt(pruneLength: 400)
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                templateKey
+    query ProductRollQuery {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { frontmatter: { templateKey: { eq: "product-post" } } }
+      ) {
+        edges {
+          node {
+            excerpt(pruneLength: 400)
+            id
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+              templateKey
+              date(formatString: "MMMM DD, YYYY")
+              featuredpost
+              featuredimage {
+                childImageSharp {
+                  fluid(maxWidth: 120, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
               }
             }
           }
         }
       }
-    `}
+    }
+  `}
     render={(data, count) => <ProductRoll data={data} count={count} />}
   />
 )

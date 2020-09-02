@@ -35,3 +35,7 @@ h5 { font-size: 16px; font-weight: bold; color: #4b91fd; }
         }
     }
 }
+.column.is-3 {
+    flex: none;
+    width: 25%;
+}

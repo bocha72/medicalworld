@@ -19,8 +19,11 @@ export const ProductPostTemplate = ({
     <section className="section">
       {helmet || ''}
       <div className="container content">
-        <div className="columns">
-          <div className="column is-6 is-offset-1">
+        <div className="columns is-12">
+          <div className="column is-4 is-offset-1">
+            {/* Acá va un slider */}
+          </div>
+          <div className="column is-8 is-offset-1">
             <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
               {title}
             </h1>
@@ -43,10 +46,10 @@ export const ProductPostTemplate = ({
               </li>
             </ul>
           </div>
-          <div className="column is-6 is-offset-1">
+        </div>
+        <div className="column is-12 is-offset-1">
             <PostContent content={content} />
           </div>
-        </div>
       </div>
     </section>
   )
@@ -61,7 +64,7 @@ ProductPostTemplate.propTypes = {
   brochure: PropTypes.shape({
     brochure1: PropTypes.oneOfType([PropTypes.string, PropTypes.string]),
     brochure2: PropTypes.oneOfType([PropTypes.string, PropTypes.string]),
-    brichure3: PropTypes.oneOfType([PropTypes.string, PropTypes.string]),
+    brochure3: PropTypes.oneOfType([PropTypes.string, PropTypes.string]),
   }),
 }
 
@@ -99,29 +102,30 @@ ProductPost.propTypes = {
 export default ProductPost
 
 export const pageQuery = graphql`
-  query ProductPostByID($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      id
-      html
-      frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        title
-        description
-        brochure {
-          brochure1 {
-            title
-            url
-          }
-          brochure2 {
-            title
-            url
-          }
-          brochure3 {
-            title
-            url
-          }
+query ProductPostByID($id: String!) {
+  markdownRemark(id: { eq: $id }) {
+    id
+    html
+    frontmatter {
+      date(formatString: "MMMM DD, YYYY")
+      title
+      description
+      tags
+      brochure {
+        brochure1 {
+          url
+          title
+        }
+        brochure2 {
+          url
+          title
+        }
+        brochure3 {
+          url
+          title
         }
       }
     }
   }
+}
 `
