@@ -13,7 +13,7 @@ Debido a la amplitud geográfica de nuestro país, trabajamos con subdistribuido
 
 Dedicamos un gran esfuerzo a colaborar en la capacitación de nuestros clientes promocionando su participación en cursos y congresos internacionales de especialización.
 
-![mapa](/img/mapa.jpg)
+![mapa](/img/coffee-gear.png)
 
 ### Expansión
 
