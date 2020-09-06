@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
@@ -20,25 +20,28 @@ export const ProductPostTemplate = ({
   return (
     <section className="section product-detail-page">
       {helmet || ''}
+      <div className="title-container has-text-centered">
+        <h1 className="titl">Nuestros Porductos</h1>
+      </div>
       <div className="container content">
         <div className="columns is-12">
           <div className="column is-6 is-offset-1">
             {/* Acá va un slider */}
             <Carousel width="100%" height="400px" thumbHeight="80px" autoPlay={false}>
               <div>
-                <PreviewCompatibleImage imageInfo={productimages.image1.image} />
+                <PreviewCompatibleImage imageInfo={{image: productimages.image1.image}} />
               </div>
               <div>
-                <PreviewCompatibleImage imageInfo={productimages.image2.image} />
+                <PreviewCompatibleImage imageInfo={{image: productimages.image2.image}} />
               </div>
               <div>
-                <PreviewCompatibleImage imageInfo={productimages.image3.image} />
+                <PreviewCompatibleImage imageInfo={{image: productimages.image3.image}} />
               </div>
               <div>
-                <PreviewCompatibleImage imageInfo={productimages.image4.image} />
+                <PreviewCompatibleImage imageInfo={{image: productimages.image4.image}} />
               </div>
               <div>
-                <PreviewCompatibleImage imageInfo={productimages.image5.image} />
+                <PreviewCompatibleImage imageInfo={{image: productimages.image5.image}} />
               </div>
             </Carousel>
           </div>
@@ -64,10 +67,14 @@ export const ProductPostTemplate = ({
                 </a>
               </li>
             </ul>
+              <Link to="/#" className="btn">Descargar Folleto</Link>
+              <Link to="/#" className="btn">Información Técnica</Link>
           </div>
         </div>
         <div className="column is-12 is-offset-1">
             <PostContent content={content} />
+            <div className="downloadables">
+            </div>
         </div>
       </div>
     </section>
@@ -101,7 +108,7 @@ const ProductPost = ({ data }) => {
         contentComponent={HTMLContent}
         description={post2.frontmatter.description}
         helmet={
-          <Helmet titleTemplate="%s | MedicalWorld">
+          <Helmet titleTemplate="MedicalWorld | %s">
             <title>{`${post2.frontmatter.title}`}</title>
             <meta
               name="description"
