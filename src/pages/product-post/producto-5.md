@@ -9,7 +9,7 @@ featuredpost: false
 featuredimage: /img/maxresdefault.jpg
 productimages:
   image1:
-    image: /img/jumbotron.jpg
+    image: /img/m2logo.png
     alt: lorem ipsum
   image2:
     image: /img/products-grid2.jpg
