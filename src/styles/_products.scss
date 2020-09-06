@@ -36,3 +36,37 @@
         }
     }
 }
+
+/* Product Detail Page */
+.product-detail-page {
+    .content {
+        .columns.is-12 {
+            .column.is-6 {
+                margin-left: 0;
+                .sc-ifAKCX.ceUQzC {
+                    /* Slider */
+                    .sc-bdVaJa.dplxSk {
+                        .inner {
+                            .slide-item {
+                                background: transparent !important;
+                                div {
+                                    width: 100%;
+                                    .gatsby-image-wrapper {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                        .navigation {
+                            display: none;
+                        }
+                    }
+                    /* Thumbnails */
+                    .sc-bxivhb .thumb div > * {
+                        display: block !important;
+                    }
+                }
+            }
+        }
+    }
+}
