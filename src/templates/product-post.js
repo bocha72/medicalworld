@@ -35,10 +35,10 @@ export const ProductPostTemplate = ({
                 <PreviewCompatibleImage imageInfo={productimages.image3.image} />
               </div>
               <div>
-                <PreviewCompatibleImage imageInfo={productimages.image1.image} />
+                <PreviewCompatibleImage imageInfo={productimages.image4.image} />
               </div>
               <div>
-                <PreviewCompatibleImage imageInfo={productimages.image2.image} />
+                <PreviewCompatibleImage imageInfo={productimages.image5.image} />
               </div>
             </Carousel>
           </div>
