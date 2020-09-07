@@ -33,20 +33,20 @@ class BrandSlider extends Component {
                 infinite={true}
                 customTransition="transform 400ms ease-in-out 0s"
             >
-                <div>Brand Image 1</div>
-                <div>Brand Image 2</div>
-                <div>Brand Image 3</div>
-                <div>Brand Image 4</div>
-                <div>Brand Image 5</div>
-                <div>Brand Image 6</div>
-                <div>Brand Image 7</div>
-                <div>Brand Image 8</div>
-                <div>Brand Image 9</div>
-                <div>Brand Image 10</div>
-                <div>Brand Image 11</div>
-                <div>Brand Image 12</div>
-                <div>Brand Image 13</div>
-                <div>Brand Image 14</div>
+                <div>Brand logo 1</div>
+                <div>Brand logo 2</div>
+                <div>Brand logo 3</div>
+                <div>Brand logo 4</div>
+                <div>Brand logo 5</div>
+                <div>Brand logo 6</div>
+                <div>Brand logo 7</div>
+                <div>Brand logo 8</div>
+                <div>Brand logo 9</div>
+                <div>Brand logo 10</div>
+                <div>Brand logo 11</div>
+                <div>Brand logo 12</div>
+                <div>Brand logo 13</div>
+                <div>Brand logo 14</div>
             </Carousel>
         )
     }
