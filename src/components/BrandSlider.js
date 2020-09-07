@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
-import iurco from '../../static/img/iurco.png'
 
 const responsive = {
     superLargeDesktop: {
@@ -26,21 +25,28 @@ class BrandSlider extends Component {
 
     render() {
         return (
-            <Carousel responsive={responsive}>
-                <div>Item 1</div>
-                <div>Item 2</div>
-                <div>Item 3</div>
-                <div>Item 4</div>
-                <div>Item 5</div>
-                <div>Item 6</div>
-                <div>Item 7</div>
-                <div>Item 8</div>
-                <div>Item 9</div>
-                <div>Item 10</div>
-                <div>Item 11</div>
-                <div>Item 12</div>
-                <div>Item 13</div>
-                <div>Item 14</div>
+            <Carousel 
+                responsive={responsive}
+                autoPlay={true}
+                autoPlaySpeed={2000}
+                removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
+                infinite={true}
+                customTransition="transform 400ms ease-in-out 0s"
+            >
+                <div>Brand Image 1</div>
+                <div>Brand Image 2</div>
+                <div>Brand Image 3</div>
+                <div>Brand Image 4</div>
+                <div>Brand Image 5</div>
+                <div>Brand Image 6</div>
+                <div>Brand Image 7</div>
+                <div>Brand Image 8</div>
+                <div>Brand Image 9</div>
+                <div>Brand Image 10</div>
+                <div>Brand Image 11</div>
+                <div>Brand Image 12</div>
+                <div>Brand Image 13</div>
+                <div>Brand Image 14</div>
             </Carousel>
         )
     }
