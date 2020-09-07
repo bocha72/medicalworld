@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import BrandSlider from '../components/BrandSlider'
 
 export const IndexPageTemplate = ({
   image,
@@ -95,6 +96,11 @@ export const IndexPageTemplate = ({
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="columns">
+        <div className="column is-12 has-text-centered">
+          <BrandSlider />
         </div>
       </div>
     </section>

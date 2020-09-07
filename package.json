@@ -30,6 +30,7 @@
     "react-carousel-with-thumbnail": "^1.4.0",
     "react-dom": "^16.8.4",
     "react-helmet": "^6.0.0",
+    "react-multi-carousel": "^2.5.5",
     "uuid": "^7.0.0"
   },
   "keywords": [

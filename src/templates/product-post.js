@@ -2,10 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
+import Carousel from 'react-carousel-with-thumbnail'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
-import Carousel from 'react-carousel-with-thumbnail'
+import BrandSlider from '../components/BrandSlider'
 
 export const ProductPostTemplate = ({
   productimages,
@@ -75,6 +76,11 @@ export const ProductPostTemplate = ({
             <PostContent content={content} />
             <div className="downloadables">
             </div>
+        </div>
+      </div>
+      <div className="columns">
+        <div className="column is-12 has-text-centered">
+          <BrandSlider />
         </div>
       </div>
     </section>

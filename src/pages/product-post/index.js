@@ -1,5 +1,5 @@
 import React from 'react'
-
+import BrandSlider from '../../components/BrandSlider'
 import Layout from '../../components/Layout'
 import ProductRoll from '../../components/ProductRoll'
 
@@ -30,6 +30,11 @@ export default class ProductIndexPage extends React.Component {
             <div className="container">
               <div className="content">
                 <ProductRoll />
+              </div>
+            </div>
+            <div className="columns">
+              <div className="column is-12 has-text-centered">
+                <BrandSlider />
               </div>
             </div>
           </section>
