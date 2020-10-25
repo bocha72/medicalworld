@@ -27,7 +27,7 @@ class BrandSlider extends Component {
         return (
             <Carousel 
                 responsive={responsive}
-                autoPlay={true}
+                autoPlay={false}
                 autoPlaySpeed={2000}
                 removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
                 infinite={true}
@@ -38,15 +38,6 @@ class BrandSlider extends Component {
                 <div>Brand logo 3</div>
                 <div>Brand logo 4</div>
                 <div>Brand logo 5</div>
-                <div>Brand logo 6</div>
-                <div>Brand logo 7</div>
-                <div>Brand logo 8</div>
-                <div>Brand logo 9</div>
-                <div>Brand logo 10</div>
-                <div>Brand logo 11</div>
-                <div>Brand logo 12</div>
-                <div>Brand logo 13</div>
-                <div>Brand logo 14</div>
             </Carousel>
         )
     }

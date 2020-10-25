@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BrandSlider from '../components/BrandSlider'
 
@@ -53,7 +52,7 @@ export const IndexPageTemplate = ({
       <div className="container">
         <div className="section">
           <div className="columns">
-            <div className="column is-10 is-offset-1">
+            <div className="column is-12">
               <div className="contents">
                 <div className="mainpitch">
                   <div className="tile">
@@ -61,36 +60,42 @@ export const IndexPageTemplate = ({
                     <h4 className="m-subtitle">{mainpitch.description}</h4>
                   </div>
                 </div>
-                <div className="columns home-categories">
-                  <div className="column is-4 has-text-centered">
-                    <PreviewCompatibleImage imageInfo={main.image1} />
-                    <h4>{main.image1.title}</h4>
+                <div className="columns home-find-product">
+                  <div className="column is-8 big-box">
+                    <div className="column is-6 big-box-text">
+                      <h3>Stent periférico</h3>
+                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
+                      <Link className="btn" to="/products">
+                        Ver producto
+                      </Link>
+                    </div>
+                    <div className="column is-6 big-box-img">
+                      <PreviewCompatibleImage imageInfo={main.image1} />
+                    </div>
                   </div>
-                  <div className="column is-4 has-text-centered">
-                    <PreviewCompatibleImage imageInfo={main.image2} />
-                    <h4>{main.image2.title}</h4>
-                  </div>
-                  <div className="column is-4 has-text-centered">
-                    <PreviewCompatibleImage imageInfo={main.image3} />
-                    <h4>{main.image3.title}</h4>
-                  </div>
-                </div>
-                <div className="columns category-button">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      Ver productos
-                    </Link>
+                  <div className="column is-4 small-box">
+                    <h1 className="find-brand-text">
+                      <strong>Encontrá el producto </strong>que necesitas
+                    </h1>
                   </div>
                 </div>
-                <div className="home-blog column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Ultimas noticias
-                  </h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Leer más
-                    </Link>
+                <div className="columns home-find-brand">
+                  <div className="column is-4 small-box">
+                    <h1 className="find-brand-text">
+                      <strong>Encontrá el producto </strong><br/>por marca
+                    </h1>
+                  </div>
+                  <div className="column is-8 big-box">
+                    <div className="column is-6 big-box-img">
+                      <PreviewCompatibleImage imageInfo={main.image2} />
+                    </div>
+                    <div className="column is-6 big-box-text">
+                      <h3>Stent periférico</h3>
+                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
+                      <Link className="btn" to="/products">
+                        Ver producto
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -98,7 +103,12 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
-      <div className="columns">
+      <div className="columns" style={{
+        display: 'block',
+      }}>
+        <div className="column is-12 has-text-centered">
+          <h1>Marcas que comercializamos</h1>
+        </div>
         <div className="column is-12 has-text-centered">
           <BrandSlider />
         </div>

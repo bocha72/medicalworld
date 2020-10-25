@@ -1,4 +1,11 @@
 .home {
+    .columns {
+        margin: 0;
+    }
+    ul.react-multi-carousel-track {
+        text-align: center;
+        margin: 0 auto;
+    }
     .banner {
         justify-content: left;
         .banner-content {
@@ -15,62 +22,55 @@
         }
     }
     .mainpitch {
+        margin-bottom: 50px;
         .tile {
             display: block;
             text-align: center;
+            .m-title {
+                margin-bottom: 20px;
+            }
         }
     }
-    .home-categories {
-        .is-4 {
-            height: fit-content;
-            .gatsby-image-wrapper {
-                margin-bottom: 10px;
-                div{
-                    padding-bottom: 135px !important;
-                    position: absolute;
-                }
-                img {
-                    max-width: 135px;
-                    max-height: 135px;
-                    margin: 0 auto;
-                    left: 104px !important;
-                }
-                picture {
-                    img {
-                        position: unset !important;
-                        display: block;
-                        margin: 0 auto;
+    .home-find-product, .home-find-brand {
+        position: relative;
+        height: 250px;
+        margin-bottom: 30px;
+        .big-box {
+            display: inline-flex;
+            background-color: #F6F6F6;
+            overflow: hidden;
+            .big-box-text {
+                padding: 45px 0.75rem;
+                .btn {
+                    background-color: #B50F78;
+                    color: #fff;
+                    box-shadow: inset 0 0 0 3px #B50F78;
+                    &:hover {
+                        background-color: #4989FE;
+                        box-shadow: inset 0 0 0 3px #4989FE;
                     }
                 }
             }
         }
+        .small-box {
+            background-color: #0047A8;
+            padding: 30px 50px;
+            .find-brand-text {
+                color: #fff;
+                font-size: 41px;
+                font-weight: 300;
+                text-transform: uppercase;
+                strong {
+                    color: #fff;
+                    font-weight: 800;
+                }
+            }
+        }
     }
-    .home-blog {
-        .is-6 {
-            .is-featured {
-                background-color: #b7308657 !important;
-            }
-            .notification {
-                background-color: #3762954d;
-                .post-meta {
-                    .title{
-                        color: #376295 !important;
-                        &:hover {
-                            color: #b73086 !important;
-                        }
-                    }
-                }
-            }
-        }
-        .blog-button {
-            .btn {
-                box-shadow: inset 0 0 0 2px #376295;
-                color: #376295;
-                &:hover {
-                    box-shadow: inset 0 0 0 2px #b73086;
-                    color: #b73086;
-                }
-            }
-        }
+    .home-find-product .big-box {
+        margin-right: 10px;
+    }
+    .home-find-brand .big-box {
+        margin-left: 10px;
     }
 }
