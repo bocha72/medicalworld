@@ -18,7 +18,7 @@ main:
     title: Soporte de vida
   image2:
     alt: Cardiologia intervencionista
-    image: /img/30_2x-300x300-removebg-preview.png
+    image: /img/enmascarar_grupo_12-removebg-preview.png
     title: Cardiologia intervencionista
   image3:
     alt: Cirugia cardiaca
