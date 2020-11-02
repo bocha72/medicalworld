@@ -32,8 +32,8 @@ export default class ProductIndexPage extends React.Component {
                 <ProductRoll />
               </div>
             </div>
-            <div className="columns">
-              <div className="column is-12 has-text-centered">
+            <div className="columns brandslider-container">
+              <div className="column is-12 has-text-centered brandslider">
                 <BrandSlider />
               </div>
             </div>

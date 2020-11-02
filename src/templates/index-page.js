@@ -9,6 +9,7 @@ export const IndexPageTemplate = ({
   image,
   title,
   subtitle,
+  bannertext,
   mainpitch,
   main
 }) => (
@@ -21,6 +22,7 @@ export const IndexPageTemplate = ({
         })`,
         backgroundPosition: `top left`,
         backgroundAttachment: `fixed`,
+        height: `681px`,
       }}
     >
       <div className="banner-content"
@@ -28,7 +30,7 @@ export const IndexPageTemplate = ({
 
         }}
       >
-        <h5
+        <h4
           className=""
           style={{
             lineHeight: '1',
@@ -36,7 +38,7 @@ export const IndexPageTemplate = ({
           }}
         >
           {title}
-        </h5>
+        </h4>
         <h3
           className=""
           style={{
@@ -45,6 +47,9 @@ export const IndexPageTemplate = ({
         >
           {subtitle}
         </h3>
+        <p>
+          {bannertext}
+        </p>
         <Link className="btn" to="/products"> Ver productos</Link>
       </div>
     </div>
@@ -106,10 +111,10 @@ export const IndexPageTemplate = ({
       <div className="columns" style={{
         display: 'block',
       }}>
-        <div className="column is-12 has-text-centered">
+        <div className="column is-12 has-text-centered brandslider-title">
           <h1>Marcas que comercializamos</h1>
         </div>
-        <div className="column is-12 has-text-centered">
+        <div className="column is-12 has-text-centered brandslider">
           <BrandSlider />
         </div>
       </div>
@@ -121,6 +126,7 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   subtitle: PropTypes.string,
+  bannertext: PropTypes.string,
   mainpitch: PropTypes.object,
   main: PropTypes.shape({
     image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string, PropTypes.string]),
@@ -138,6 +144,7 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         subtitle={frontmatter.subtitle}
+        bannertext={frontmatter.bannertext}
         mainpitch={frontmatter.mainpitch}
         main={frontmatter.main}
       />
@@ -168,6 +175,7 @@ export const pageQuery = graphql`
           }
         }
         subtitle
+        bannertext
         mainpitch {
           title
           description

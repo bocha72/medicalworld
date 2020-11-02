@@ -4,6 +4,7 @@ title: Productos Médicos
 image: /img/banner-home.png
 subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore.
+bannertext: Nonumy eirmod tempor invidunt ut labore Eirmod tempor invidunt ut labore.
 mainpitch:
   title: Nuestros productos
   description: >

@@ -11,13 +11,31 @@
         .banner-content {
             width: 450px;
             margin-left: 50px;
-            h5 {
+            h4 {
                 text-transform: uppercase;
                 margin: 0;
+                color: #fff;
+                padding: 6.5px;
             }
             h3 {
                 line-height: 1.2;
+                color: #fff;
+                padding: 6.5px;
+            }
+            p {
                 margin-bottom: 30px;
+                color: #fff;
+                padding: 6.5px;
+            }
+            .btn {
+                background-color: #FFFFFF95;
+                box-shadow: none;
+                color: #0047A8;
+                &:hover {
+                    color: #fff;
+                    background-color: #4989FE;
+                    box-shadow: none;
+                }
             }
         }
     }
@@ -72,5 +90,31 @@
     }
     .home-find-brand .big-box {
         margin-left: 10px;
+    }
+    .brandslider-title {
+        margin-bottom: 20px;
+    }
+    .react-multiple-carousel__arrow--left {
+        left: calc(0% + 1px);
+    }
+    .react-multiple-carousel__arrow--right {
+        right: calc(0% + 1px);
+    }
+    .react-multiple-carousel__arrow {
+        background: transparent;
+        border-radius: 0;
+        min-width: 25px;
+        height: 50px;
+        &:hover {
+            background: transparent;
+            &::before {
+                color: #5855557a;
+            }
+        }
+        &::before {
+            color:#5855551a;
+            font-size: 40px;
+            font-weight: 100;
+        }
     }
 }

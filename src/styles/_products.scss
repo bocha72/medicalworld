@@ -34,6 +34,34 @@
                 }
             }
         }
+        .brandslider-container {
+            margin-top: 50px;
+            .brandslider {
+                .react-multiple-carousel__arrow--left {
+                    left: calc(0% + 1px);
+                }
+                .react-multiple-carousel__arrow--right {
+                    right: calc(0% + 1px);
+                }
+                .react-multiple-carousel__arrow {
+                    background: transparent;
+                    border-radius: 0;
+                    min-width: 25px;
+                    height: 50px;
+                    &:hover {
+                        background: transparent;
+                        &::before {
+                            color: #5855557a;
+                        }
+                    }
+                    &::before {
+                        color:#5855551a;
+                        font-size: 40px;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -15,7 +15,7 @@ import brand10 from '../../static/img/brands-logos/brand10.png'
 const responsive = {
     superLargeDesktop: {
         breakpoint: { max: 4000, min: 3000 },
-        items: 8,
+        items: 5,
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -23,7 +23,7 @@ const responsive = {
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 4,
+        items: 5,
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
@@ -31,17 +31,43 @@ const responsive = {
     },
 };
 
+const CustomDot = ({ onMove, index, onClick, active }) => {
+    // onMove means if dragging or swiping in progress.
+    // active is provided by this lib for checking if the item is active or not.
+    return (
+      <li
+        className={active ? "active" : "inactive"}
+        onClick={() => onClick()}
+      >
+        {index + 1}
+      </li>
+    );
+  };
+
 class BrandSlider extends Component {
 
     render() {
         return (
             <Carousel 
-                responsive={responsive}
-                autoPlay={true}
-                autoPlaySpeed={2500}
-                removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
-                infinite={true}
-                customTransition="transform 400ms ease-in-out 0s"
+            responsive={responsive}
+            additionalTransfrom={0}
+            arrows
+            autoPlaySpeed={3000}
+            centerMode={false}
+            className=""
+            dotListClass=""
+            draggable
+            focusOnSelect={false}
+            infinite
+            itemClass=""
+            keyBoardControl
+            minimumTouchDrag={80}
+            renderButtonGroupOutside={false}
+            renderDotsOutside={false}
+            sliderClass=""
+            slidesToSlide={1}
+            swipeable
+            customDot={<CustomDot />}
             >
                 <div><img src={brand01} alt="" className="brand-logo"/></div>
                 <div><img src={brand02} alt="" className="brand-logo"/></div>
