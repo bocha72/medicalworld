@@ -14,7 +14,7 @@ mainpitch:
 main:
   image1:
     alt: Soporte de vida
-    image: /img/home-product-1.png
+    image: /img/home-product.png
     title: Soporte de vida
   image2:
     alt: Cardiologia intervencionista
