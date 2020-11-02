@@ -11,6 +11,7 @@ import brand07 from '../../static/img/brands-logos/brand07.png'
 import brand08 from '../../static/img/brands-logos/brand08.png'
 import brand09 from '../../static/img/brands-logos/brand09.png'
 import brand10 from '../../static/img/brands-logos/brand10.png'
+import brand11 from '../../static/img/brands-logos/brand11.png'
 
 const responsive = {
     superLargeDesktop: {
@@ -79,6 +80,7 @@ class BrandSlider extends Component {
                 <div><img src={brand08} alt="" className="brand-logo"/></div>
                 <div><img src={brand09} alt="" className="brand-logo"/></div>
                 <div><img src={brand10} alt="" className="brand-logo"/></div>
+                <div><img src={brand11} alt="" className="brand-logo"/></div>
             </Carousel>
         )
     }
