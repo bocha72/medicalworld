@@ -10,13 +10,13 @@ productimages:
   image1:
     image: /img/30_2x-300x300-removebg-preview.png
   image2:
-    image: /img/apple-touch-icon.png
+    image: /img/30_2x-300x300-removebg-preview.png
   image3:
-    image: /img/blog-index.jpg
+    image: /img/30_2x-300x300-removebg-preview.png
   image4:
     image: /img/cardiologia-intervencionista-icon.png
   image5:
-    image: /img/chemex.jpg
+    image: /img/30_2x-300x300-removebg-preview.png
 brochure:
   brochure1:
     title: brochure 1
