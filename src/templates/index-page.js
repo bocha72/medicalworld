@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import BrandSlider from '../components/BrandSlider'
+import FindProductBrand from '../components/FindProductBrand'
 
 export const IndexPageTemplate = ({
   image,
@@ -67,7 +68,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="columns home-find-product">
                   <div className="column is-8 big-box">
-                    <div className="column is-6 big-box-text">
+                    <div className="column is-6 big-box-content">
                       <h3>Stent periférico</h3>
                       <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
                       <Link className="btn" to="/products">
@@ -91,15 +92,8 @@ export const IndexPageTemplate = ({
                     </h1>
                   </div>
                   <div className="column is-8 big-box">
-                    <div className="column is-6 big-box-img">
-                      <PreviewCompatibleImage imageInfo={main.image2} />
-                    </div>
-                    <div className="column is-6 big-box-text">
-                      <h3>Stent periférico</h3>
-                      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>
-                      <Link className="btn" to="/products">
-                        Ver producto
-                      </Link>
+                    <div className="column is-12 big-box-content">
+                      <FindProductBrand />
                     </div>
                   </div>
                 </div>
