@@ -2,8 +2,7 @@
 templateKey: index-page
 title: Productos Médicos
 image: /img/banner-home.png
-subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-  eiusmod tempor incididunt ut labore.
+subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
 bannertext: Nonumy eirmod tempor invidunt ut labore Eirmod tempor invidunt ut labore.
 mainpitch:
   title: Nuestros productos
