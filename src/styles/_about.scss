@@ -1,0 +1,30 @@
+.about-us-page {
+    padding: 0;
+    .banner {
+        text-align: center;
+        .banner-content {
+            text-align: center;
+            h5, h1 {
+                color: #fff;
+                margin-block-start: 0;
+                margin-block-end: 0;
+            }
+        }
+    }
+    .about-content {
+        background-image: url(../../static/img/about-content-background.png);
+        background-repeat: no-repeat;
+        margin-top: 30px;
+        margin-bottom: 0;
+        .about-text {
+            background-color: #ffffff6b;
+            h1 {
+                color: #43536A;
+                font-weight: 500;
+            }
+            .content p {
+                color: #43536A;
+            }
+        }
+    }
+}
