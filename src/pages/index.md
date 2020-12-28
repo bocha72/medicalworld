@@ -6,10 +6,8 @@ subtitle: Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
 bannertext: Nonumy eirmod tempor invidunt ut labore Eirmod tempor invidunt ut labore.
 mainpitch:
   title: Nuestros productos
-  description: >
-    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-    consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt
-    ut labore et dolore magnam aliquam quaerat voluptatem. 
+  description: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
 main:
   image1:
     alt: Soporte de vida
